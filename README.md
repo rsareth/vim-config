@@ -1,6 +1,6 @@
 Vim preferences
 ===============
-It's just my vim preferences. It wont't fit to anybody but it could be helpful for some people.
+It's just my vim preferences. It won't fit to anybody but it could be helpful for some people.
 
 Pre-requisites
 ==============
