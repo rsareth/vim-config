@@ -29,3 +29,7 @@ You just have to read the manual of each plugins to install it.
 Install from the script
 =======================
 Just launch the install.sh to use all these preferences.
+
+Credits
+=======
+A lot of these preferences came from [Martin Brochhaus](https://github.com/mbrochh).
