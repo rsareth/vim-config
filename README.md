@@ -25,3 +25,7 @@ You just have to read the manual of each plugins to install it.
 * [vim-scriptease](https://github.com/tpope/vim-scriptease)
 
 * [vim-sensible](https://github.com/tpope/vim-sensible)
+
+Install from the script
+=======================
+Just launch the install.sh to use all these preferences.
