@@ -71,6 +71,9 @@ set novisualbell
 set t_vb=
 set tm=500
 
+" Hide the scrollbars on the right and the left side
+set guioptions-=rL
+
 " Rebind <Leader> key
 " I like to have it here because it is easier to reach than the default and
 " it is next to ``m`` and ``n`` which I use for navigating between tabs.
