@@ -30,5 +30,6 @@ echo "  -> vim-sensible"
 git clone git://github.com/tpope/vim-sensible.git 1>/dev/null
 
 echo "Copying the vimrc file ..."
+cd -
 mv "${HOME}"/.vimrc "${HOME}"/vimrc_backup
 cp vimrc "${HOME}"/.vimrc
