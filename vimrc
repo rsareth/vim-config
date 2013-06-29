@@ -7,7 +7,7 @@ autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 " autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 
 " Colorscheme
-colorscheme desert
+colorscheme wombat256mod
 
 " Show whitespace
 set list
@@ -74,6 +74,9 @@ set tm=500
 " Hide the scrollbars on the right and the left side
 set guioptions-=rL
 
+" New split on the right side
+set splitright
+
 " Rebind <Leader> key
 " I like to have it here because it is easier to reach than the default and
 " it is next to ``m`` and ``n`` which I use for navigating between tabs.
@@ -99,6 +102,9 @@ noremap <Leader>E :qa!<CR>
 
 " Quick delete current buffer ``<,b>``
 noremap <Leader>b :bd<CR>
+
+" Quick delete current file ``<,c>``
+noremap <Leader>c :close<CR>
 
 " bind Ctrl+<movement> keys to move around the windows, instead of using Ctrl+w + <movement>
 " Every unnecessary keystroke that can be saved is good for your health :)
@@ -132,13 +138,13 @@ filetype plugin indent on
 " NERDTree
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Automatic load
-autocmd vimenter * NERDTree
+" autocmd vimenter * NERDTree
 
 " Shortcut
 map <C-n> :NERDTreeToggle<CR>
 
 " Close vim if the only window left open is a NERDTree 
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Python IDE
