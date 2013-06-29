@@ -1,15 +1,17 @@
 #!/bin/bash
 
 echo "Installing the pathogen plugin ..."
-mkdir -p ~/.vim/autoload ~/.vim/bundle; \
-curl -Sso ~/.vim/autoload/pathogen.vim \
+mkdir -p "${HOME}"/.vim/autoload ~/.vim/bundle && \
+curl -Sso "${HOME}"/.vim/autoload/pathogen.vim \
     https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 
+echo "Downloading the colorscheme wombat256mod ..."
+mkdir -p "${HOME}"/.vim/colors && \
+curl -Sso "${HOME}"/.vim/colors/wombat256mob.vim \
+    http://www.vim.org/scripts/download_script.php?src_id=13400
+
 echo "Downloading the plugins ..."
-if ! test -d "${HOME}"/.vim/bundle
-then
-  mkdir -p "${HOME}"/.vim/bundle
-fi
+mkdir -p "${HOME}"/.vim/bundle
 
 cd "${HOME}"/.vim/bundle
 echo "  -> NERDTree"
