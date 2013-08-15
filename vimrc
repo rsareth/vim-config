@@ -105,6 +105,9 @@ noremap <Leader>E :qa!<CR>
 
 " Quick delete current buffer ``<,b>``
 noremap <Leader>b :bd<CR>
+" Quick switching between buffer ``<,x>``
+noremap <Leader>/ :bn<CR>
+noremap <Leader>. :bp<CR>
 
 " Quick delete current file ``<,c>``
 noremap <Leader>c :close<CR>
