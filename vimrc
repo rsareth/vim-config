@@ -31,6 +31,9 @@ set fo-=t     " don't automatically wrap text when typing
 set colorcolumn=120
 highlight ColorColumn ctermbg=233
 
+" Highlighning the current line
+set cursorline
+
 " Make search case insensitive
 set hlsearch
 set incsearch
