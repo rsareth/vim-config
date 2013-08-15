@@ -7,7 +7,7 @@ curl -Sso "${HOME}"/.vim/autoload/pathogen.vim \
 
 echo "Downloading the colorscheme wombat256mod ..."
 mkdir -p "${HOME}"/.vim/colors && \
-curl -Sso "${HOME}"/.vim/colors/wombat256mob.vim \
+curl -Sso "${HOME}"/.vim/colors/wombat256mod.vim \
     http://www.vim.org/scripts/download_script.php?src_id=13400
 
 echo "Downloading the plugins ..."
@@ -30,6 +30,8 @@ echo "  -> vim-scriptease"
 git clone https://github.com/tpope/vim-scriptease.git 1>/dev/null
 echo "  -> vim-sensible"
 git clone git://github.com/tpope/vim-sensible.git 1>/dev/null
+echo "  -> jshint2"
+git clone https://github.com/Shutnik/jshint2.vim.git 1>/dev/null
 
 echo "Copying the vimrc file ..."
 cd -
