@@ -83,7 +83,7 @@ set splitright
 " Rebind <Leader> key
 " I like to have it here because it is easier to reach than the default and
 " it is next to ``m`` and ``n`` which I use for navigating between tabs.
-let mapleader = ","
+let mapleader = "§"
 
 " Bind nohl
 " Removes highlight of your last search
@@ -98,18 +98,20 @@ vnoremap <C-s> <C-C>:update<CR>
 inoremap <C-s> <C-O>:update<CR>
 
 " Quick quit command
-"" Quit current window ``<,e>``
+"" Quit current window ``<§e>``
 noremap <Leader>e :quit<CR>
-"" Quit all windows ``<,E>``
+"" Quit all windows ``<§E>``
 noremap <Leader>E :qa!<CR>
 
-" Quick delete current buffer ``<,b>``
+" List of all buffers
+noremap <Leader>l :ls<CR>
+" Quick delete current buffer ``<§b>``
 noremap <Leader>b :bd<CR>
-" Quick switching between buffer ``<,x>``
-noremap <Leader>/ :bn<CR>
-noremap <Leader>. :bp<CR>
+" Quick switching between buffer ``<§x>``
+noremap <Leader>p :bn<CR>
+noremap <Leader>o :bp<CR>
 
-" Quick delete current file ``<,c>``
+" Quick delete current file ``<§c>``
 noremap <Leader>c :close<CR>
 
 " bind Ctrl+<movement> keys to move around the windows, instead of using Ctrl+w + <movement>
@@ -120,8 +122,11 @@ map <c-l> <c-w>l
 map <c-h> <c-w>h
 
 " easier moving between tabs
-map <Leader>n <esc>:tabprevious<CR>
-map <Leader>m <esc>:tabnext<CR>
+map <Leader>u <esc>:tabprevious<CR>
+map <Leader>i <esc>:tabnext<CR>
+
+" Launching JSHint on the current buffer
+map <Leader>j <esc>:JSHint<CR>
 
 " easier moving of code blocks
 " Try to go into visual mode (v), thenselect several lines of code here and
