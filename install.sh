@@ -15,23 +15,31 @@ mkdir -p "${HOME}"/.vim/bundle
 
 cd "${HOME}"/.vim/bundle
 echo "  -> NERDTree"
-git clone https://github.com/scrooloose/nerdtree.git 1>/dev/null
+git clone -q https://github.com/scrooloose/nerdtree.git
 echo "  -> python-mode"
-git clone git://github.com/klen/python-mode.git 1>/dev/null
-echo "  -> vim-fugitive"
-git clone git://github.com/tpope/vim-fugitive.git 1>/dev/null
-echo "  -> vim-powerline"
-git clone https://github.com/Lokaltog/vim-powerline.git 1>/dev/null
+git clone -q git://github.com/klen/python-mode.git
 echo "  -> vim-ruby"
-git clone git://github.com/vim-ruby/vim-ruby.git 1>/dev/null
+git clone -q git://github.com/vim-ruby/vim-ruby.git
 echo "  -> vim-scala"
-git clone https://github.com/derekwyatt/vim-scala.git 1>/dev/null
-echo "  -> vim-scriptease"
-git clone https://github.com/tpope/vim-scriptease.git 1>/dev/null
-echo "  -> vim-sensible"
-git clone git://github.com/tpope/vim-sensible.git 1>/dev/null
+git clone -q https://github.com/derekwyatt/vim-scala.git
 echo "  -> jshint2"
-git clone https://github.com/Shutnik/jshint2.vim.git 1>/dev/null
+git clone -q https://github.com/Shutnik/jshint2.vim.git
+echo "  -> emmet"
+git clone -q https://github.com/mattn/emmet-vim.git
+echo "  -> vundle"
+git clone -q https://github.com/gmarik/vundle.git
+echo "  -> vim-powerline"
+git clone -q https://github.com/Lokaltog/vim-powerline.git
+echo "  -> vim-fugitive"
+git clone -q git://github.com/tpope/vim-fugitive.git
+echo "  -> vim-scriptease"
+git clone -q https://github.com/tpope/vim-scriptease.git
+echo "  -> vim-sensible"
+git clone -q git://github.com/tpope/vim-sensible.git
+echo "  -> vim-surround"
+git clone -q git://github.com/tpope/vim-surround.git
+echo "  -> vim-repeat"
+git clone -q git://github.com/tpope/vim-repeat.git
 
 echo "Copying the vimrc file ..."
 cd -
