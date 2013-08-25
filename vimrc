@@ -4,7 +4,7 @@ autocmd! bufwritepost .vimrc source %
 " Show whitespace
 " MUST be inserted BEFORE the colorscheme command
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
-" autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 
 " Colorscheme
 colorscheme wombat256mod
@@ -108,8 +108,8 @@ noremap <Leader>l :ls<CR>
 " Quick delete current buffer ``<§b>``
 noremap <Leader>b :bd<CR>
 " Quick switching between buffer ``<§x>``
-noremap <Leader>p :bn<CR>
-noremap <Leader>o :bp<CR>
+noremap <Leader>[ :bn<CR>
+noremap <Leader>] :bp<CR>
 
 " Quick delete current file ``<§c>``
 noremap <Leader>c :close<CR>
@@ -122,8 +122,8 @@ map <c-l> <c-w>l
 map <c-h> <c-w>h
 
 " easier moving between tabs
-map <Leader>u <esc>:tabprevious<CR>
-map <Leader>i <esc>:tabnext<CR>
+map <Leader>' <esc>:tabprevious<CR>
+map <Leader>\ <esc>:tabnext<CR>
 
 " Launching JSHint on the current buffer
 map <Leader>j <esc>:JSHint<CR>
