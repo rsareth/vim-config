@@ -28,6 +28,8 @@ echo "  -> emmet"
 git clone -q https://github.com/mattn/emmet-vim.git
 echo "  -> vundle"
 git clone -q https://github.com/gmarik/vundle.git
+echo "  -> vim-gitgutter"
+git clone -q https://github.com/airblade/vim-gitgutter.git
 echo "  -> vim-powerline"
 git clone -q https://github.com/Lokaltog/vim-powerline.git
 echo "  -> vim-fugitive"
