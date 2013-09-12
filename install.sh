@@ -16,6 +16,8 @@ mkdir -p "${HOME}"/.vim/bundle
 cd "${HOME}"/.vim/bundle
 echo "  -> NERDTree"
 git clone -q https://github.com/scrooloose/nerdtree.git
+echo "  -> CtrlP"
+git clone https://github.com/kien/ctrlp.vim.git
 echo "  -> python-mode"
 git clone -q git://github.com/klen/python-mode.git
 echo "  -> vim-ruby"
