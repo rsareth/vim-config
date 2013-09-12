@@ -104,7 +104,7 @@ noremap <Leader>e :quit<CR>
 noremap <Leader>E :qa!<CR>
 
 " List of all buffers
-noremap <Leader>l :ls<CR>
+noremap <Leader>l :CtrlPBuffer<CR>
 " Quick delete current buffer ``<§b>``
 noremap <Leader>b :bd<CR>
 " Quick switching between buffer ``<§x>``
