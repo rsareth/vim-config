@@ -30,8 +30,8 @@ echo "  -> vundle"
 git clone -q https://github.com/gmarik/vundle.git
 echo "  -> vim-gitgutter"
 git clone -q https://github.com/airblade/vim-gitgutter.git
-echo "  -> vim-powerline"
-git clone -q https://github.com/Lokaltog/vim-powerline.git
+echo "  -> vim-airline"
+git clone -q https://github.com/bling/vim-airline.git
 echo "  -> vim-fugitive"
 git clone -q git://github.com/tpope/vim-fugitive.git
 echo "  -> vim-scriptease"
