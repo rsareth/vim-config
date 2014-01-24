@@ -47,5 +47,8 @@ git clone -q git://github.com/tpope/vim-repeat.git
 
 echo "Copying the vimrc file ..."
 cd -
-mv "${HOME}"/.vimrc "${HOME}"/vimrc_backup
+if test -f "${HOME}"/.vimrc
+then
+  mv "${HOME}"/.vimrc "${HOME}"/vimrc_backup
+fi
 cp vimrc "${HOME}"/.vimrc
