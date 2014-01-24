@@ -2,10 +2,6 @@ Vim preferences
 ===============
 It's just my vim preferences. It won't fit to anybody but it could be helpful for some people.
 
-Pre-requisites
-==============
-First, install [pathogen](https://github.com/tpope/vim-pathogen)
-
 Plugins used
 ============
 You just have to read the manual of each plugins to install it.
@@ -28,7 +24,8 @@ You just have to read the manual of each plugins to install it.
 
 Install from the script
 =======================
-Just launch the install.sh to use all these preferences.
+Just launch the install.sh to use all these preferences and install all these
+plugin.
 
 Credits
 =======
